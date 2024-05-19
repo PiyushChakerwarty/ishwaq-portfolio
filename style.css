@@ -1,41 +1,48 @@
-*{
+/* Reset styles for all elements */
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #f4f4f4; */
     background-color: rgb(207,239,221);
 }
-h1{
+
+/* Styles for h1 headings */
+h1 {
     font-size: 2em;
 }
 
-h2{
+/* Styles for h2 headings */
+h2 {
     margin: 20px auto;
 } 
-p{
+
+/* General paragraph styles */
+p {
     font-size: 20px;
     line-height: 30px;
     text-align: justify;
 }
-header{
+
+/* Header and Navigation (Used in all pages) */
+header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     text-align: center;
     display: flex;
     justify-content: space-around;
 }
-
-
 
 nav ul li a {
     color: #fff;
@@ -43,28 +50,42 @@ nav ul li a {
     font-size: 20px;
 }
 
-footer{
-    /* background-color: #333; */
-    color: #fff;
+/* Footer styles (Used in all pages) */
+footer {
     text-align: center;
     padding: 10px 0;
-}
-.navigation-links{
-    margin: 1% auto;
-}
-a {
-    color: #000; /* Set the default link color */
-    text-decoration: none; /* Optional: remove underline */
-}
-a:visited {
-    color: white; /* Ensure visited links have the same color */
-}
-a:hover {
-    color: #4CAF50; /* Optional: change color on hover */
-    text-decoration: underline; /* Optional: add underline on hover */
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-/* Home */
+footer p {
+    text-align: center;
+}
+
+/* Navigation links styles */
+.navigation-links {
+    margin: 1% auto;
+}
+
+/* General anchor tag styles */
+a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+a:visited {
+    color: white; 
+}
+
+a:hover {
+    color: #4CAF50; 
+    text-decoration: underline; 
+}
+
+/* Home Page Banner Section */
 .banner {
     display: flex;
     align-items: center;
@@ -78,12 +99,14 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Flex container for banner content */
 .banner-content {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
+/* Styles for the banner image */
 .banner-image {
     flex: 1;
     max-width: 50%;
@@ -92,6 +115,7 @@ a:hover {
     object-fit: cover;
 }
 
+/* Styles for the banner text */
 .banner-text {
     flex: 1;
     max-width: 50%;
@@ -108,6 +132,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* Styles for the contact button in the banner */
 .contact-button {
     display: inline-block;
     padding: 10px 20px;
@@ -122,30 +147,28 @@ a:hover {
     background-color: #555;
 }
 
-
-
-/* About me */
-
+/* About Me Page Main Section */
 .about-me {
     width: 80%;
     margin: 50px auto;
     padding: 20px;
-    /* background: #f4f4f4; */
     border-radius: 8px;
 }
 
+/* Headings in About Me Page */
 .about-me h1, .about-me h2 {
     text-align: center;
     margin: 20px auto;
 }
 
+/* Paragraphs in About Me Page */
 .about-me p {
     margin-bottom: 20px;
     line-height: 1.6;
 }
 
+/* Travel Gallery Section (About Me Page) */
 .travel-gallery {
-    /* max-width: 1000px; */
     width: 80%;
     margin: 50px auto;
     padding: 20px;
@@ -157,12 +180,14 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* Grid layout for travel photos */
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
+/* Styles for travel photos */
 .travel-photo {
     width: 100%;
     height: auto;
@@ -174,43 +199,49 @@ a:hover {
     transform: scale(1.05);
 }
 
-
-/* Journals */
-
-.journal-overview{
+/* Journals Page Overview Section */
+.journal-overview {
     width: 80%;
     margin: 5% auto;
 }
-.journal-overview p{
+
+.journal-overview p {
     text-align: justify;
 }
 
-.journal-overview h1{
+.journal-overview h1 {
     margin: 20px auto;
 }
-.week-selection{
+
+/* Week Selection Dropdown (Journals Page) */
+.week-selection {
     text-align: center;
     margin: 0 auto;
-    
 }
-.week-selection select{
-    padding: 10px 20px;
+
+.week-selection select {
+    padding: 10px 50px;
     background-color: #333;
     color: #fff;
+    font-size: 15px;
 }
 
+.week-selection-heading{
+    margin: 15px auto;
+}
 
-.journal-body{
+/* Journal Body Section (Journals Page) */
+.journal-body {
     width: 80%;
     margin: 0 auto;
     text-align: justify;
 }
-.journal-body-container{
+
+.journal-body-container {
     margin-top: 7%;
 }
 
-
-/* Centering image in each journal page */
+/* Centering Image in Each Journal Page */
 .center-image {
     display: block;
     margin: 20px auto;
@@ -225,10 +256,7 @@ a:hover {
     margin: 10% auto;
 }
 
-
-
-/* Contact Page */
-
+/* Contact Page Main Form */
 .contact-form {
     max-width: 700px;
     margin: 5% auto;
@@ -249,11 +277,13 @@ a:hover {
     color: #555;
 }
 
+/* Labels in Contact Form */
 .contact-form label {
     display: block;
     margin-bottom: 5px;
 }
 
+/* Inputs and Textareas in Contact Form */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -263,6 +293,7 @@ a:hover {
     border-radius: 4px;
 }
 
+/* Submit Button in Contact Form */
 .contact-form button {
     padding: 10px 20px;
     border: none;
@@ -276,6 +307,7 @@ a:hover {
     background: #555;
 }
 
+/* Personal Info Section (Contact Page) */
 .personal-info {
     margin-top: 20px;
     padding-top: 20px;
@@ -293,9 +325,7 @@ a:hover {
     color: #555;
 }
 
-
-/* CV */
-
+/* CV Page Main Section */
 .cv {
     max-width: 800px;
     margin: 50px auto;
@@ -310,6 +340,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* CV Table */
 .cv-table {
     width: 100%;
     border-collapse: collapse;
@@ -329,19 +360,4 @@ a:hover {
 
 .cv-table ul {
     padding-left: 20px;
-}
-
-/* CSS for footer in each page */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p{
-    text-align: center;
 }
