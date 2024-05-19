@@ -198,6 +198,32 @@ a:hover {
     transform: scale(1.05);
 }
 
+
+/* Video Section */
+.video-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border: none; 
+    border-radius: 8px;
+}
+
+
+
 /* Journals Page Overview Section */
 .journal-overview {
     width: 80%;
