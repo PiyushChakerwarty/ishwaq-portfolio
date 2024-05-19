@@ -9,6 +9,18 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+h1{
+    font-size: 2em;
+}
+
+h2{
+    margin: 20px auto;
+} 
+p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
 header{
     background-color: #333;
     color: #fff;
@@ -70,6 +82,56 @@ a:hover {
 .about-me h1{
     margin: 5% 0;
 }
+.about-me {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-me h1, .about-me h2 {
+    text-align: center;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.travel-gallery {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.travel-gallery h2 {
+    margin-bottom: 10%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.travel-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.travel-photo:hover {
+    transform: scale(1.05);
+}
+
 
 /* Journals */
 
@@ -93,17 +155,7 @@ a:hover {
 .journal-body-container{
     margin-top: 7%;
 }
-.journal-body-container h1{
-    font-size: 2em;
-}
 
-.journal-body-container h2{
-    margin: 20px auto;
-} 
-.journal-body-container p{
-    font-size: 20px;
-    line-height: 30px;
-}
 
 /* Centering image in each journal page */
 .center-image {
@@ -227,6 +279,7 @@ a:hover {
     margin: 10px 0 20px 20px;
 }
 
+/* CSS for footer in each page */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -235,4 +288,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer p{
+    text-align: center;
 }
