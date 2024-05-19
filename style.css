@@ -90,11 +90,10 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    padding: 20px;
+    padding: 40px;
     background-color: #fff;
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: 1400px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -140,7 +139,7 @@ a:hover {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 .contact-button:hover {
