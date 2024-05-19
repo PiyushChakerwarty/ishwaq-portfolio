@@ -65,18 +65,63 @@ a:hover {
 }
 
 /* Home */
-.home-header{
-    text-align: center;
-    margin: 5% auto;
-}
-.university-image {
-    display: block;
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+    background-color: #fff;
     margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+    max-width: 1200px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 8px;
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+.banner-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
 
 
 /* About me */
